@@ -1,17 +1,17 @@
 <template>
-  <header class="wk-header"></header>
+  <header class="et-header"></header>
 </template>
 
 <script>
 export default {
-  name: 'WkHeader'
+  name: 'EtHeader'
 }
 </script>
 
 <style lang="scss" scoped>
 @import "~static/styles/common";
 
-.wk-header {
+.et-header {
   position: fixed;
   top: 0;
   right: 0;

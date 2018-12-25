@@ -12,7 +12,7 @@ export default {
 <style lang="scss" scoped>
 @import "~static/styles/common";
 
-.wk-footer {
+.et-footer {
   position: fixed;
   right: 0;
   bottom: 0;
