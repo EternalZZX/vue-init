@@ -1,6 +1,6 @@
-# wukong
+# vue-init
 
-> wukong code quality management tools
+> vue project init template
 
 ## Build Setup
 
