@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'WkIndex'
+  name: 'EtIndex'
 }
 </script>
 

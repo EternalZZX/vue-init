@@ -1,15 +1,15 @@
 <template>
-  <div class="wk-content">
+  <div class="et-content">
     {{ msg }}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'WkCode',
+  name: 'EtMain',
   data () {
     return {
-      msg: '代码错误展示页'
+      msg: 'Hello World!'
     }
   }
 }

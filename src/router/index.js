@@ -1,52 +1,36 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import WkHeader from '@/components/header';
-import WkFooter from '@/components/footer';
+import EtHeader from '@/components/header';
+import EtFooter from '@/components/footer';
 
 Vue.use(Router);
 
 const frameCompontent = {
   template: `
-  <div class="wk-wukong">
-      <wk-header></wk-header>
-      <div class="wk-main">
+  <div class="et-frame">
+      <et-header></et-header>
+      <div class="et-main">
         <router-view/>
       </div>
-      <wk-footer></wk-footer>
+      <et-footer></et-footer>
   </div>`,
   name: 'EtRouter',
   components: {
-    WkHeader,
-    WkFooter
+    EtHeader,
+    EtFooter
   }
 };
 
 export default new Router({
   mode: 'history',
   routes: [{
-    path: '/login',
-    name: 'login',
-    component: () => import('@/components/login')
-  }, {
     path: '/',
     component: frameCompontent,
     children: [{
       path: '/',
-      alias: '/list',
-      name: 'list',
-      component: () => import('@/components/list')
-    }, {
-      path: '/report',
-      name: 'report',
-      component: () => import('@/components/report')
-    }, {
-      path: '/report/detail',
-      name: 'detail',
-      component: () => import('@/components/detail')
-    }, {
-      path: '/report/code',
-      name: 'code',
-      component: () => import('@/components/code')
+      alias: '/index',
+      name: 'index',
+      component: () => import('@/components/index')
     }]
   }]
 })

@@ -1,12 +1,11 @@
 <template>
-  <footer class="wk-footer">
-    中科天齐-Copyright @ 2018 宁波中科天齐信息技术有限公司
+  <footer class="et-footer">
   </footer>
 </template>
 
 <script>
 export default {
-  name: 'WkFooter'
+  name: 'EtFooter'
 }
 </script>
 

@@ -1,5 +1,4 @@
-$headerHeight: 3rem;
-$footerHeight: 2rem;
+@import "./setting";
 
 * {
   margin: 0;
@@ -12,7 +11,7 @@ body {
   height: 100%;
 }
 
-.wk-main {
+.et-main {
   width: 100%;
   margin-top: $headerHeight;
   margin-bottom: $footerHeight;
